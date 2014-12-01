@@ -1,0 +1,27 @@
+#wrap{
+    width: 100%;
+}
+
+
+#map{
+    position: absolute;
+    height: 90%;
+    width: 75%;
+    float: left;
+}
+
+#sideBar{
+    margin-left: 10px; 
+    float: right;
+    width: 20%;
+}
+
+#search{
+    background-color: pink;
+
+}
+
+.navbar-header{
+    padding: 1.2em;
+
+}
