@@ -1,7 +1,9 @@
 {
-  "name": "digtalmemex-webclient-libs",
+  "name": "digitalmemex-webclient-libs",
   "version": "0.0.1",
   "dependencies": {
-    "requirejs": "latest"
+    "requirejs": "latest",
+    "angular": "~1.2.22",
+    "angular-sanitize": "~1.2.22"
   }
 }

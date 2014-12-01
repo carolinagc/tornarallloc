@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8"/>
-    <title>Digital MemeX WebClient</title>
-    <script src="/filerepo/lib/requirejs/require.js"
-            data-main="/filerepo/org/digitalmemex/webclient/index.js"></script>
-</head>
-<body>
-Loading Digital Memex Webclient ...
-</body>
+<html ng-app="kiezatlasFrontend">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="/filerepo/org/digitalmemex/webclient/styles/kiezatlas-frontend.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    
+    <title>Tornar al lloc</title>
+  </head>
+  <body>
+    <div id="wrap" ng-controller="sidebarController">
+      <div ng-include="src='/filerepo/org/digitalmemex/webclient/views/nav.html'"></div>
+      <leaflet></leaflet>
+      <div ng-include="src='/filerepo/org/digitalmemex/webclient/views/sidebar.html'"></div>
+    </div>
+    </div>
+
+    <script src="/filerepo/org/digitalmemex/webclient/bower_components/angular/angular.min.js"></script>
+    <script src="/filerepo/org/digitalmemex/webclient/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/filerepo/org/digitalmemex/webclient/scripts/app.js"></script>
+    <script src="/filerepo/org/digitalmemex/webclient/scripts/sidebar-controller.js"></script>
+    <script src="/filerepo/org/digitalmemex/webclient/scripts/services.js"></script>
+    <script src="/filerepo/org/digitalmemex/webclient/scripts/leaflet-directive.js"></script>
+  </body>
 </html>
