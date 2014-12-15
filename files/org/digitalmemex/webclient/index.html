@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html ng-app="kiezatlasFrontend">
+<html ng-app="tornarFrontend">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <link rel="stylesheet" href="/filerepo/org/digitalmemex/webclient/styles/kiezatlas-frontend.css" />
+    <link rel="stylesheet" href="/filerepo/org/digitalmemex/webclient/styles/tornar-frontend.css" />
+	<link rel="stylesheet" media="screen" href="/filerepo/org/digitalmemex/webclient/styles/home.css" />
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     
     <title>Tornar al lloc</title>
   </head>
   <body>
-    <div id="wrap" ng-controller="sidebarController">
-      <div ng-include="src='/filerepo/org/digitalmemex/webclient/views/nav.html'"></div>
-      <leaflet></leaflet>
-      <div ng-include="src='/filerepo/org/digitalmemex/webclient/views/sidebar.html'"></div>
-    </div>
-    </div>
+    <div class="page-wrapper">
+       <div ng-include="src='/filerepo/org/digitalmemex/webclient/views/nav.html'"></div>
+      <div ng-include="src='/filerepo/org/digitalmemex/webclient/views/footer.html'"></div>
+      <div ng-view />
 
+    </div>
+</div>
+<!--AngularJS -->
     <script src="/filerepo/org/digitalmemex/webclient/bower_components/angular/angular.min.js"></script>
+    <script src="/filerepo/org/digitalmemex/webclient/bower_components/angular-route/angular-route.min.js"></script>
     <script src="/filerepo/org/digitalmemex/webclient/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<!--Tornar al Lloc -->
     <script src="/filerepo/org/digitalmemex/webclient/scripts/app.js"></script>
     <script src="/filerepo/org/digitalmemex/webclient/scripts/sidebar-controller.js"></script>
     <script src="/filerepo/org/digitalmemex/webclient/scripts/services.js"></script>
