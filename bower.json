@@ -4,6 +4,8 @@
   "dependencies": {
     "requirejs": "latest",
     "angular": "~1.2.22",
-    "angular-sanitize": "~1.2.22"
+     "angular-route": "~1.2.22",
+    "angular-sanitize": "~1.2.22",
+     "angular-ui-bootstrap-bower": "~0.11.2"
   }
 }
